@@ -1,0 +1,8 @@
+spring:
+  profiles: development
+  datasource:
+    url: jdbc:mysql://dev-db-host:3306/account_service
+    username: dev_user
+    password: dev_password
+server:
+  port: 8082

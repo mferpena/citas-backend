@@ -1,0 +1,8 @@
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:h2:mem:localdb
+    username: local_user
+    password: local_password
+server:
+  port: 8081

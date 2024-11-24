@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: citas
+  profiles:
+    active: default
+  data:
+    mongodb:
+      uri: mongodb://admin:yourpassword@localhost:27017
+      database: citas
+jwt:
+  secret: supersecretkeyforsigningjwt1234567890
+  expirationMillis: 3600000
+server:
+  port: 8081

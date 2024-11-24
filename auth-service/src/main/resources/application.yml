@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: auth-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true # Fallar rápido si no puede conectar al config-service
+  config:
+    import: "optional:configserver:"  # Use "optional" to allow the app to start even if Config Server is down.
+  profiles:
+    active: local
+server:
+  port: 8081
+logging:
+  level:
+    org.springframework.cloud: DEBUG
